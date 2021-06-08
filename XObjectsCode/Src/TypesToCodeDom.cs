@@ -236,9 +236,9 @@ namespace Xml.Schema.Linq.CodeGen
 
             enumTypeDecl.UserData[nameof(ClrTypeReference)] = typeRef;
 
-            if (!EqualEnumTypeDeclarationExists(enumTypeDecl)) {
+            //if (!EqualEnumTypeDeclarationExists(enumTypeDecl)) {
                 typeBuilder.TypeDeclaration.Members.Add(enumTypeDecl);
-            }
+            //}
         }
 
         private IEnumerable<CodeTypeDeclaration> GetAllEnumsDefinedAlready()
